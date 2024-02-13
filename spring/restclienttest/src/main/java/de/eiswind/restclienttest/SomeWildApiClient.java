@@ -11,9 +11,8 @@ public class SomeWildApiClient {
     private RestClient restClient;
 
     public SomeWildApiClient(
-            // baseUrl must be dynamic, so we can switch
-            // between the real API and the mock server
-            @Value("${some-wild-api.url}") String baseUrl,
+            @Value("${some-wild-api.url}") // <1> Die baseUrl muss dynamisch sein, damit wir zwischen der echten API und dem Mock umschalten können.
+            String baseUrl,
             RestClient.Builder builder
     ) {
         this.restClient = builder.baseUrl(baseUrl).build();

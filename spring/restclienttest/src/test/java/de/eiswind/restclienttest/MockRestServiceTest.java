@@ -38,9 +38,9 @@ public class MockRestServiceTest {
 
         var result = apiClient.invokeApi();
 
-        mockServer.verify();
-
         assertThat(result).isEqualTo(body);
+
+        mockServer.verify();            // <1> Zuletzt wird geprüft, ob die Anfrage an den MockServer gesendet wurde.
     }
 }
 // end::snip[]
