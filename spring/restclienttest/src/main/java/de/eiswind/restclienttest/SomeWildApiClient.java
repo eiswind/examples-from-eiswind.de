@@ -11,6 +11,8 @@ public class SomeWildApiClient {
     private RestClient restClient;
 
     public SomeWildApiClient(
+            // baseUrl must be dynamic, so we can switch
+            // between the real API and the mock server
             @Value("${some-wild-api.url}") String baseUrl,
             RestClient.Builder builder
     ) {

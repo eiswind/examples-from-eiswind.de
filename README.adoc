@@ -1,0 +1,5 @@
+= Examples from eiswind.de
+
+You will find all examples from the eiswind.de website in this monorepo.
+
+* /spring/restclienttest : RestClientTest vs WireMock
