@@ -13,10 +13,11 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
+// tag::snip[]
 @RestClientTest(SomeWildApiClient.class)
-@TestPropertySource(properties = {
-        "some-wild-api.url=http://localhost"
-})
+@TestPropertySource(
+        properties = {"some-wild-api.url=http://localhost"}
+)
 public class MockRestServiceTest {
 
     @Autowired
@@ -42,3 +43,4 @@ public class MockRestServiceTest {
         assertThat(result).isEqualTo(body);
     }
 }
+// end::snip[]

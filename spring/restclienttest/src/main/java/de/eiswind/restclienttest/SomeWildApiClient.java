@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
+// tag::snip[]
 @Service
 public class SomeWildApiClient {
 
@@ -23,3 +24,4 @@ public class SomeWildApiClient {
                 .body(String.class);
     }
 }
+// end::snip[]

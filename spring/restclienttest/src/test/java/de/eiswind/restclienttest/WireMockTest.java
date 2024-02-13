@@ -17,6 +17,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.verify;
 import static org.assertj.core.api.Assertions.assertThat;
 
+// tag::snip[]
 @SpringBootTest
 @EnableWireMock({
         @ConfigureWireMock(
@@ -51,3 +52,4 @@ class WireMockTest {
 
     }
 }
+// end::snip[]
