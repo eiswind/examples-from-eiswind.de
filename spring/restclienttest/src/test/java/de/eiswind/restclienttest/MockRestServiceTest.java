@@ -40,7 +40,7 @@ public class MockRestServiceTest {
 
         assertThat(result).isEqualTo(body);
 
-        mockServer.verify();            // <1> Zuletzt wird geprüft, ob die Anfrage an den MockServer gesendet wurde.
+        mockServer.verify(); // <1>
     }
 }
 // end::snip[]

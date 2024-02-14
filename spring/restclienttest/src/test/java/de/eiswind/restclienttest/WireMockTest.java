@@ -36,7 +36,7 @@ class WireMockTest {
         var body = "This API is very wild. It's not safe to use it.";
 
 
-        wiremock.stubFor(get("/some-wild-api")  // <1> Zuerst wird der Request definiert, auf den das Mock reagieren soll.
+        wiremock.stubFor(get("/some-wild-api")  // <1>
                 .willReturn(aResponse()
                 .withHeader("Content-Type", "text/plain")
                 .withBody(body)
